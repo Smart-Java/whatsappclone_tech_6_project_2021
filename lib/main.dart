@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+//import './form_widget.dart';
+//import './texh_6_project.dart';
+import './simple_interest-cal.dart';
 
 void main(){
   runApp(
     MaterialApp(
       title: 'Test app',
-      home: FlatButtonDisplay(),
+      home: SimpleInterest(),
       theme: ThemeData(
-        primaryColor: Colors.blue[800],
-        accentColor: Colors.blue,
-        buttonColor: Colors.blue,
+        primaryColor: Colors.blue,
+        accentColor: Colors.purple,
       ),
     )
   );
@@ -17,18 +19,22 @@ void main(){
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        child: Text(
-          'Test App',
-          style: TextStyle(
-            color: Colors.blue[500],
-            fontSize: 14.0,
-            fontWeight: FontWeight.bold,
+    return
+      Scaffold(
+        appBar: AppBar(
+          title: Text('App Bar',),
+        ),
+        body: Container(
+          child: Text(
+            'Test App',
+            style: TextStyle(
+              color: Colors.blue[500],
+              fontSize: 14.0,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
-      ),
-    );
+      );
   }
 }
 
