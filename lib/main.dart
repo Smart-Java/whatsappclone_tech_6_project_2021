@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 //import './form_widget.dart';
 //import './texh_6_project.dart';
-import './simple_interest-cal.dart';
-
+//import './simple_interest-cal.dart';
+import './more_widget.dart';
 void main(){
   runApp(
     MaterialApp(
       title: 'Test app',
-      home: SimpleInterest(),
+      home: MoreWidget(),
       theme: ThemeData(
         primaryColor: Colors.blue,
         accentColor: Colors.purple,
