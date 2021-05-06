@@ -27,7 +27,6 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
   var time = TimeOfDay.now();
 
   var _timeOfDay = '';
-  
   var selectedValue;
 
   var change = true;
@@ -248,11 +247,11 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                                     firstDate: _firstDate,
                                     lastDate: _lastDate)
                                 .then((value) {
-                                  if(value != null){
-                                    setState((){
-                                      _dateOfToday = value.toIso8601String();
-                                    });
-                                  }
+                              if (value != null) {
+                                setState(() {
+                                  _dateOfToday = value.toIso8601String();
+                                });
+                              }
                             });
                           });
                         },
@@ -266,12 +265,16 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
                     ActionChip(
                       label: Text('Select Time'),
                       onPressed: () {
-                        setState((){
-                          showTimePicker(context: context, initialTime: time,).then((value) {
-                            if(value != null){
-                              setState((){
+                        setState(() {
+                          showTimePicker(
+                            context: context,
+                            initialTime: time,
+                          ).then((value) {
+                            if (value != null) {
+                              setState(() {
                                 _timeOfDay = value.format(context);
-                              });                        }
+                              });
+                            }
                           });
                         });
                       },

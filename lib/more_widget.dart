@@ -95,11 +95,11 @@ class _MoreWidgetState extends State<MoreWidget>
                       content: Text('This is a snack bar'),
                       backgroundColor: Colors.blue,
                       action: SnackBarAction(
-                        onPressed: (){
-                          print('Hello Snack bar');
+                        onPressed: () {
+                          print('This is a snackbar');
                         },
                         label: 'UNDO',
-                        textColor: Colors.red,
+                        textColor: Colors.white,
                       ),
                     ));
                   });
